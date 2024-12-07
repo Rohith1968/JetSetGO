@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".Fragments.FlightDetailsAdminFragment"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="626dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_card_offwhite"
+        android:clipToPadding="false"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/white"
+            android:elevation="4dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter flight number"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFlightNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Flight Number"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter aircraft model"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editAircraftModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Aircraft Model"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter departure city"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDepartureCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Departure City"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="D/M/YYYY"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDepartureDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Departure Date"
+                        android:inputType="date"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="HH:MM"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDepartureTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Departure Time"
+                        android:inputType="time"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter destination city"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDestinationCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Arrival City"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter arrival date"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editArrivalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Arrival Date"
+                        android:inputType="date"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter arrival time"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editArrivalTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Arrival Time"
+                        android:inputType="time"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter booking open date"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBookingOpenDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Booking Open Date"
+                        android:inputType="date"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter Duration"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Duration"
+                        android:inputType="time"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Enter max number of seats"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMaxNumOfSeats"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Max Number of Seats"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Frequency"
+                        android:textColor="@color/darkPurple"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerIsRecurrent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:ems="5"
+                        android:minHeight="60dp"
+                        android:popupBackground="@drawable/rounded_popup" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:placeholderText="Price per extra baggage"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editExtraBaggagePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Extra Baggage"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:placeholderText="Economy class price"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEconomyPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Economy Price"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:placeholderText="Business class price"
+                    app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editBusinessPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Business Price"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Reservations"
+                        android:textColor="@color/darkPurple" />
+
+                    <TextView
+                        android:id="@+id/currentReservations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="0"
+                        android:textColor="@color/darkPurple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Missed Reservations"
+                        android:textColor="@color/darkPurple" />
+
+                    <TextView
+                        android:id="@+id/missedReservations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="0"
+                        android:textColor="@color/darkPurple" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_corners"
+        android:backgroundTint="@color/white"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonDelete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/darkPurple"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Delete"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/pink"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Save"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/darkPurple"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

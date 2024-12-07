@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+    </group>
+
+    <group
+        android:id="@+id/nav_group2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_view_all_flights"
+            android:icon="@drawable/view_list"
+            android:title="All Flights" />
+        <item
+            android:id="@+id/nav_my_reservations"
+            android:icon="@drawable/reserve_horizontal"
+            android:title="My Reservations" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/nav_group4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

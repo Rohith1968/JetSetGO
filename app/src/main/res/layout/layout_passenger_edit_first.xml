@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sign_up_passenger_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_button"
+    android:backgroundTint="@color/white"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="14dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="8dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/darkPurple"
+            android:textSize="14sp"
+            app:placeholderText="Enter name longer than 3 characters"
+            app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="5"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:nextFocusDown="@id/editEmail"
+            android:nextFocusForward="@id/editEmail"
+            android:textColor="@color/darkPurple"
+            android:textSize="14sp"
+            app:placeholderText="Enter name longer than 3 characters"
+            app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="5"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/editEmail"
+                android:nextFocusForward="@id/editEmail"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:placeholderText="Example@Example.com"
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="5"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:placeholderText="05********"
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="5"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:placeholderText="8-15 characters. At least one uppercase, one lowercase letters, one number, one special character."
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="5"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:placeholderText="Re-type Password"
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="5"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

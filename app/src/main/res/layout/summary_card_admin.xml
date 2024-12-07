@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:ignore="HardCodedText">
+
+    <com.vipulasri.ticketview.TicketView
+        android:id="@+id/ticketView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ticketBorderColor="@color/black"
+        app:ticketBorderWidth="0.5dp"
+        app:ticketCornerRadius="16dp"
+        app:ticketCornerType="rounded"
+        app:ticketDividerPadding="4dp"
+        app:ticketDividerType="dash"
+        app:ticketElevation="16dp"
+        app:ticketOrientation="horizontal"
+        app:ticketScallopPositionPercent="78"
+        app:ticketScallopRadius="10dp"
+        app:ticketShadowColor="@color/black"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="true" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Osama Pass"
+        android:textColor="@color/darkPurple"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFrom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewFlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SB123"
+        android:textColor="@color/lighterPurple"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Amman"
+        android:textColor="@color/pink"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Dubai"
+        android:textColor="@color/pink"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="135dp"
+        android:scaleX="0.5"
+        android:src="@drawable/horizontal_dashed_lines"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTo"
+        app:layout_constraintStart_toEndOf="@+id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
+        android:scaleX="0.5"
+        android:src="@drawable/horizontal_dashed_lines"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTo"
+        app:layout_constraintStart_toEndOf="@+id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="14dp"
+        android:scaleX="0.5"
+        android:src="@drawable/horizontal_dashed_lines"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTo"
+        app:layout_constraintStart_toEndOf="@+id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <ImageView
+        android:id="@+id/plane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/plane2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlightNumber" />
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="02:30"
+        android:textColor="@color/blueGray"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plane" />
+
+    <TextView
+        android:id="@+id/textViewDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="02:30"
+        android:textColor="@color/darkPurple"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDuration" />
+
+    <TextView
+        android:id="@+id/textViewArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="02:30"
+        android:textColor="@color/darkPurple"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDuration" />
+
+    <TextView
+        android:id="@+id/textViewDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="2024-08-18"
+        android:textColor="@color/darkPurple"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDepartureTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureTime" />
+
+    <TextView
+        android:id="@+id/textViewArrivalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="2024-08-19"
+        android:textColor="@color/darkPurple"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewArrivalTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArrivalTime" />
+
+    <ImageView
+        android:id="@+id/imageBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/bag"
+        app:layout_constraintStart_toStartOf="@id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewBags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="2"
+        android:textColor="@color/darkPurple"
+        app:layout_constraintStart_toEndOf="@+id/imageBag"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <ImageView
+        android:id="@+id/imageFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/food"
+        app:layout_constraintStart_toEndOf="@+id/textViewBags"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Diabetic"
+        android:textColor="@color/darkPurple"
+        app:layout_constraintStart_toEndOf="@+id/imageFood"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Economy"
+        android:textColor="@color/cyan"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/textViewTo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <ImageView
+        android:id="@+id/imageDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="180dp"
+        android:src="@drawable/dollar"
+        app:layout_constraintEnd_toEndOf="@id/textViewTo"
+        app:layout_constraintStart_toStartOf="@id/textViewFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="Total Price:"
+        android:textColor="@color/darkPurple"
+        app:layout_constraintStart_toEndOf="@+id/imageDollar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="77dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="$12500"
+        android:textColor="@color/darkPurple"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+    <TextView
+        android:id="@+id/textViewFlightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="258dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewReservationID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="258dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

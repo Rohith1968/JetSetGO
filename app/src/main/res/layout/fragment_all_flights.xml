@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".Fragments.AllFlightsFragment"
+    tools:ignore="HardcodedText, ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/rounded_card"
+        android:backgroundTint="@color/white"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Filter by:"
+            android:textColor="@color/lighterPurple"
+            android:textSize="14sp" />
+
+        <!-- First Row: Departure City and Departure Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="Enter departure city"
+                app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editDepartureCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Departure City"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="YYYY-MM-DD"
+                app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editDepartureDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Departure Date"
+                    android:inputType="date"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Second Row: Arrival City and Arrival Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="Enter arrival city"
+                app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editArrivalCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Arrival City"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="YYYY-MM-DD"
+                app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editArrivalDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Arrival Date"
+                    android:inputType="date"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="YYYY-MM-DD"
+                app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editReturnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Return Date"
+                    android:inputType="date"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/pink"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Filter"
+            android:textAllCaps="false"
+            android:textColor="@color/darkPurple"
+            android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="start"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/radio_oneWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/pink"
+                    android:fontFamily="@font/poppins_medium"
+                    android:minHeight="48dp"
+                    android:text="One Way"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:buttonTint="@color/pink"
+                    android:fontFamily="@font/poppins_medium"
+                    android:minHeight="48dp"
+                    android:text="Round Trip"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+<ScrollView
+android:layout_height="match_parent"
+android:layout_marginTop="232dp"
+android:layout_width="match_parent"
+android:paddingTop="8dp"
+android:scrollbarSize="5dp"
+android:scrollbarThumbVertical="@drawable/scrollbar"
+tools:ignore="SpeakableTextPresentCheck">
+
+<LinearLayout
+    android:id="@+id/cardContainer"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical" />
+</ScrollView>
+
+    </FrameLayout>

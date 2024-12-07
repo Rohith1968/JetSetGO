@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sign_up_passenger_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/rounded_button"
+    android:backgroundTint="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="8dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/darkPurple"
+        android:textSize="14sp"
+        android:layout_marginTop="14dp"
+        app:placeholderText="Enter 9 Digit Number"
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassportNumber"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Passport Number"
+            android:inputType="number"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/darkPurple"
+            android:textSize="14sp"
+            app:placeholderText="D/M/YYYY"
+            app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="5"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Issue Date"
+                android:inputType="date"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Issue Place"
+                android:textColor="@color/darkPurple"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="190dp"
+                android:minHeight="56dp"
+                android:popupBackground="@drawable/rounded_popup" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/darkPurple"
+            android:textSize="14sp"
+            app:placeholderText="D/M/YYYY"
+            app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDate2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="5"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Expiry Date"
+                android:inputType="date"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Food Preference"
+                android:textColor="@color/darkPurple"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="175dp"
+                android:minHeight="56dp"
+                android:popupBackground="@drawable/rounded_popup" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/darkPurple"
+        android:textSize="14sp"
+        app:placeholderText="D/M/YYYY"
+        app:placeholderTextAppearance="@style/PlaceholderTextStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDate3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Nationality"
+        android:textColor="@color/darkPurple"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinnerNationality"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:dropDownWidth="300dp"
+        android:minHeight="60dp"
+        android:popupBackground="@drawable/rounded_popup" />
+
+
+</LinearLayout>
